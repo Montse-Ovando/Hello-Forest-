@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="estilos.css" rel="stylesheet">
+    <title>Hello, Forest!</title>
+</head>
+<body onclick="PlayAudio">
+
+    <main class="main-image">
+        <h1>Hello <span class="strike">World</span>, Forest!</h1>
+        <p> <strong>Not everything in life is code!</strong></p>
+        <button class="btn"> <a target="_blank" href="https://www.pinterest.com.mx/search/pins/?q=imagenes%20de%20gatitos&rs=typed"><strong> Take a break!</strong></a></button>
+    </main>
+
+    <section>
+        <audio id="musica1" muted controls loop>
+            <source src="To Build A Home.mp3" type="audio/mpeg">
+        </audio>
+    </section>
+
+    <script>
+        function PlayAudio(){
+            document.getElementById("musica1").play();
+        }
+        window.onload = function() {
+            document.getElementById("musica1").play();
+        }
+    </script>
+
+</body>
+</html>
+

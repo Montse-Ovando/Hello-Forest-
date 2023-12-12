@@ -1,0 +1,57 @@
+/* El * significa que se aplica a toda la página en general*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color:#fff;
+}
+
+.main-image{
+    background: url(fffforest.jpg);
+    background-position: center bottom;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh; /*Viewport height*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1rem; /*Root EM, es decir 16px*/
+}
+
+    .main-image h1{
+        font-size: 4rem;
+        margin-bottom: 1rem;
+        text-shadow: 2px 2px 4px #444444;
+    }
+
+    .main-image h1 .strike{
+        text-decoration: line-through;
+    }
+
+    .main-image p{
+        font-size: 1.5rem;
+        margin-bottom: 3rem;
+        text-shadow: 2px 2px 4px black;
+    }
+
+    .main-image .btn{
+        text-shadow: 1px 1px 3px #444444;
+        background: none;
+        color: #fff;
+        border: 2.5px solid #fff;
+        padding: 1rem 2rem; /*1 rem, impacta arriba y abajo; 2rem impacta izquierda y derecha*/
+        border-radius: 5px;
+        text-transform: uppercase; /*Pone el texto en MAYUSCULAS*/
+        cursor: pointer; /*El mouse se convierte en manita*/
+    }
+
+    a{
+        text-decoration: none;
+        color: #fff;
+    }
